@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заказа</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Логотип книжного магазина" width="150" height="50">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="form.html">Форма обратной связи</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <section>
+            <h1>Оформление заказа</h1>
+            
+            <div class="form-container">
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <h2>Личные данные</h2>
+                        
+                        <div class="form-row">
+                            <label for="fio">ФИО покупателя:</label>
+                            <input type="text" id="fio" name="fio" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="address">Адрес доставки:</label>
+                            <input type="text" id="address" name="address" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="phone">Телефон:</label>
+                            <input type="text" id="phone" name="phone" required>
+                        </div>
+                        
+                        <div class="form-row">
+                            <label for="email">Адрес электронной почты:</label>
+                            <input type="text" id="email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Книги для покупки</h2>
+                        
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="book1" name="books" value="sobolev">
+                                <label for="book1">Николай Соболев. Путь к успеху</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="book2" name="books" value="statham">
+                                <label for="book2">Джейсон Стэтхем. Большая книга цитат</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="book3" name="books" value="instasamka">
+                                <label for="book3">Инстасамка. Хайп в Инстаграм</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="book4" name="books" value="kiyosaki">
+                                <label for="book4">Богатый папа, бедный папа</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="book5" name="books" value="kizaru">
+                                <label for="book5">Дежавю</label>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" id="book6" name="books" value="polyarniy">
+                                <label for="book6">Мятная сказка</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Способ оплаты</h2>
+                        
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="cash" name="payment" value="cash" checked>
+                                <label for="cash">Наличными при получении</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" id="card" name="payment" value="card">
+                                <label for="card">Картой при получении</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>День доставки</h2>
+                        
+                        <div class="form-row">
+                            <label for="delivery_day">Выберите день:</label>
+                            <select id="delivery_day" name="delivery_day">
+                                <option value="monday">Понедельник</option>
+                                <option value="wednesday">Среда</option>
+                                <option value="friday">Пятница</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <h2>Комментарий курьеру</h2>
+                        
+                        <div class="form-row">
+                            <label for="comment">Комментарий:</label>
+                            <textarea id="comment" name="comment" rows="5" cols="40" wrap="soft"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-buttons">
+                        <input type="submit" value="Заказать">
+                        <input type="reset" value="Очистить форму">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a href="https://miet.ru" target="_blank">
+            <img src="images/logo-miet.png" alt="Логотип НИУ МИЭТ" width="100" height="50">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="form.html">Форма обратной связи</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
