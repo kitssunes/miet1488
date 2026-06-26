@@ -17,11 +17,11 @@ body {
     background-color: #3d1f5e;
     padding: 20px 40px;
     display: flex;
-    justify-content: space-between;  /* Логотип и навигация прижаты к противоположным сторонам */
-    align-items: center;             /* Выравнивание по вертикали */
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 4px solid #a855f7;
-    flex-wrap: wrap;                 /* Для адаптивности */
-    gap: 15px;                       /* Отступ между элементами */
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .footer {
@@ -33,7 +33,7 @@ body {
 .header nav ul, .footer nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;                      /* Расстояние между ссылками в навигации */
+    gap: 30px;
     align-items: center;
 }
 
@@ -44,7 +44,7 @@ body {
     font-size: 16px;
     padding: 8px 12px;
     transition: all 0.3s;
-    white-space: nowrap;            /* Чтобы ссылки не переносились */
+    white-space: nowrap;
 }
 
 .header nav a:hover, .footer nav a:hover {
@@ -92,7 +92,7 @@ body {
 /* ===== КАРТОЧКИ КНИГ (FlexBox) ===== */
 .books-grid {
     display: flex;
-    flex-wrap: wrap;                 /* Перенос карточек на следующую строку */
+    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
 }
@@ -103,9 +103,9 @@ body {
     box-shadow: 0 4px 15px rgba(85, 30, 130, 0.15);
     padding: 15px;
     text-align: center;
-    min-width: 200px;                /* Минимальная ширина карточки */
-    max-width: 260px;                /* Максимальная ширина карточки */
-    flex: 1 1 220px;                /* Гибкий размер для адаптивности */
+    min-width: 200px;
+    max-width: 260px;
+    flex: 1 1 220px;
     transition: transform 0.3s, box-shadow 0.3s;
     display: flex;
     flex-direction: column;
@@ -221,14 +221,13 @@ body {
     display: inline-block;
 }
 
-/* ===== ТАБЛИЦЫ (ОСНОВНОЕ ЗАДАНИЕ) ===== */
+/* ===== ТАБЛИЦЫ ===== */
 .table-books {
     width: 100%;
     border-collapse: collapse;
     font-family: 'Georgia', 'Times New Roman', serif;
 }
 
-/* ЗАГОЛОВОЧНАЯ СТРОКА - фиолетовый фон */
 .table-books thead th {
     background-color: #3d1f5e;
     color: #ffffff;
@@ -240,7 +239,6 @@ body {
     letter-spacing: 1px;
 }
 
-/* ЗАГОЛОВОЧНЫЙ СТОЛБЕЦ (первая колонка) - светлый фиолетовый */
 .table-books tbody td:first-child {
     background-color: #ede9f0;
     color: #3d1f5e;
@@ -250,7 +248,6 @@ body {
     padding: 10px;
 }
 
-/* ВНУТРЕННИЕ ЯЧЕЙКИ */
 .table-books tbody td {
     background-color: #fefefe;
     color: #2d1b3d;
@@ -260,12 +257,10 @@ body {
     border: 2px solid #c4b5d4;
 }
 
-/* ДВОЙНЫЕ ЛИНИИ ДЛЯ ЗАГОЛОВКОВ */
 .table-books th {
     border: 3px double #a855f7;
 }
 
-/* АЛЬТЕРНАТИВНЫЙ ЦВЕТ СТРОК (зебра) */
 .table-books tbody tr:nth-child(even) td {
     background-color: #f5f0fa;
 }
@@ -274,13 +269,11 @@ body {
     background-color: #ffffff;
 }
 
-/* ВЫДЕЛЕНИЕ ЯЧЕЙКИ ПРИ НАВЕДЕНИИ */
 .table-books tbody td:hover {
     background-color: #e9d5ff;
     cursor: default;
 }
 
-/* КАРТИНКИ В ТАБЛИЦЕ (маленькие обложки) */
 .table-books td img {
     max-width: 50px;
     height: auto;
@@ -288,7 +281,6 @@ body {
 }
 
 /* ===== ГИПЕРССЫЛКИ (ПСЕВДОКЛАССЫ) ===== */
-/* Обычная ссылка */
 a:link {
     color: #7c3aed;
     font-family: 'Arial', sans-serif;
@@ -296,7 +288,6 @@ a:link {
     text-decoration: underline;
 }
 
-/* Посещённая ссылка */
 a:visited {
     color: #6d28d9;
     font-family: 'Arial', sans-serif;
@@ -304,7 +295,6 @@ a:visited {
     text-decoration: underline;
 }
 
-/* При наведении */
 a:hover {
     color: #a855f7;
     font-family: 'Arial', sans-serif;
@@ -315,7 +305,6 @@ a:hover {
     border-radius: 4px;
 }
 
-/* Активная (при клике) */
 a:active {
     color: #5b21b6;
     font-family: 'Arial', sans-serif;
@@ -346,14 +335,14 @@ a:active {
 
 .form-container form {
     display: flex;
-    flex-direction: column;          /* Вертикальное расположение */
-    gap: 20px;                       /* Отступы между блоками */
+    flex-direction: column;
+    gap: 20px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 12px;                       /* Отступы между однотипными input */
+    gap: 12px;
 }
 
 .form-group h2 {
@@ -467,12 +456,12 @@ a:active {
     box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
 }
 
-/* ===== КНОПКИ ФОРМЫ (FlexBox) ===== */
+/* ===== КНОПКИ ФОРМЫ ===== */
 .form-buttons {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-    justify-content: flex-end;       /* Выравнивание кнопок по правому краю */
+    justify-content: flex-end;
 }
 
 .form-buttons input {
@@ -620,7 +609,7 @@ a:active {
     }
     
     .form-buttons {
-        justify-content: center;     /* На мобильных кнопки по центру */
+        justify-content: center;
     }
 }
 
